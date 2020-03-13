@@ -4,7 +4,7 @@ from django.http import JsonResponse
 
 import stripe
 
-stripe.api_key = "sk_test_2C9HGWCq0ZNFziXsOAqrci7Q00aFmux5ml"
+stripe.api_key = "YOUR SECRET KEY"
 
 # Create your views here.
 
