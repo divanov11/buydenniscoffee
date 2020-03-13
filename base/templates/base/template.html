@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Buy Me Coffee</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inter&display=swap" rel="stylesheet">
+
+	<!-- Landing page styling -->
+	<style type="text/css">
+
+		body{
+			background-color: #F8F8F8;
+		}
+
+		h3, h5{
+			font-family: 'Fjalla One', sans-serif;
+			font-weight: 100;
+		}
+
+		h3{
+			font-size: 36px;
+		}
+
+		h5{
+			font-size: 24px;
+		}
+
+		p, label{
+			font-family: 'Inter', sans-serif;
+		}
+
+		hr{
+			color:#fff;
+			background-color: #fff;
+			border-top:1px solid #fff;
+			margin-top:20px;
+			margin-bottom: 20px;
+		}
+
+		#container{
+			width:1200px;
+			margin:0 auto;
+			padding-top: 3%;
+		}
+
+		.column-6{
+			width: 50%;
+			float:left;
+		}
+
+		#left-wrapper{
+			background-color: #72cca7;
+			box-shadow: 0 1px 3px 0 #dce0e6;
+		    border-radius: 4px;
+		    border: 1px solid transparent;
+		    padding: 30px;	
+		}
+
+		#right-wrapper{
+			padding: 30px;
+		}
+
+		#profile-pic{
+			width:200px;
+			display:block;
+			margin: 0 auto;
+			border-radius: 50%;
+			float:left;
+
+		}
+
+		#left-wrapper-header{
+			min-width:50%;
+			float:left;
+			padding-left:20px;
+
+		}
+
+		#left-wrapper-header h3{
+			color:#fff;
+
+		}
+
+		#right-wrapper h3{
+			color: #10a195;
+		}
+
+		.coffee-cup{
+			margin-left: 20px;
+			width: 100px;
+		}
+
+		.coffee-cup2{
+			margin-left: 20px;
+			width: 150px;
+		}
+
+		.coffee-cup3{
+			margin-left: 20px;
+			width: 200px;
+		}
+
+		/* ------------------------ FORM FIELDS ------------------------ */
+
+		.form-field-12{
+			width: 100%;
+			margin-bottom: 10px;
+			padding-top: 5px;
+		}
+
+		.form-field-6{
+			width: 50%;
+			float:left;
+			margin-bottom: 10px;
+		}
+
+		select{
+			width: 100%;
+			height: 60px!important;
+			box-shadow: 0 1px 3px 0 #dce0e6;
+		    padding: 10px 12px;
+		    border-radius: 4px;
+		    background-color: #fff;
+		    border: 1px solid transparent;
+		    font-size: 20px;
+		    color:	#44464a;
+		}
+
+		input{
+		    box-shadow: 0 1px 3px 0 #dce0e6;
+		    height:40px;
+		    border-radius: 4px;
+		    background-color: #fff;
+		    border: 1px solid transparent;
+		    color:	#44464a;
+		    width: 95%;
+		    padding: 5px;
+		    font-size: 16px;
+
+		}
+
+		input::placeholder {
+		  color: #9fa1a6;
+		}
+
+		/* ------------------------ BUTTON STYLING ------------------------ */
+		.myButton {
+			background-color:#72cca7;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family:Verdana;
+			font-size:17px;
+			padding:10px;
+			width:100%;
+			border-radius: 0;
+			text-decoration:none;
+			text-align: center;
+			transition: .3s;
+		}
+		.myButton:hover {
+			opacity: .6;
+		}
+
+		@media screen and (max-width:1200px){
+			#container{
+				width:80%;
+			}
+
+			.column-6{
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width:800px){
+			#container{
+				width:100%;
+			}
+
+			.coffee-cup{
+				margin-left: 20px;
+				width: 50px;
+			}
+
+			.coffee-cup2{
+				margin-left: 20px;
+				width: 75px;
+			}
+
+			.coffee-cup3{
+				margin-left: 20px;
+				width: 100px;
+			}
+
+		}
+	</style>
+
+	<!-- Success page styling -->
+	<style type="text/css">
+		h4{
+			font-family: 'Fjalla One', sans-serif;
+			font-weight: 100;
+			font-size: 24px;
+		}
+
+		#box{
+			max-width: 500px;
+			margin:0 auto;
+			margin-top: 100px;
+			padding:30px;
+			background-color: #fff;
+			text-align: center;
+			box-shadow: 0 1px 3px 0 #dce0e6;
+		    border-radius: 4px;
+		    border: 1px solid transparent;
+		}
+
+		.myButton {
+			background-color:#72cca7;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family:Verdana;
+			font-size:17px;
+			padding:10px;
+			width:100%;
+			border-radius: 0;
+			text-decoration:none;
+			text-align: center;
+			transition: .3s;
+		}
+		.myButton:hover {
+			opacity: .6;
+		}
+
+		#succes-icon{
+			width: 100px;
+
+		}
+	</style>
+</head>
+<body>
+	{% block content %}
+
+	{% endblock content %}
+</body>
+</html>
